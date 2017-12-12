@@ -8,7 +8,7 @@ set :views, File.join(File.dirname(__FILE__), "views")
 
 
 get "/" do
-  redirect to("/movies")
+  redirect "/movies"
 end
 
 get "/movies" do
@@ -17,6 +17,7 @@ get "/movies" do
     @movies << row.to_h
   end
   erb :"movies/index"
+  # Note: this is syntax (with quotes) if we have our erb files in a subfolder!
 end
 
 
