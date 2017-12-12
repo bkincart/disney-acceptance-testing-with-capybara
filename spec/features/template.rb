@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "template", focus: true do
+feature "template" do
 
   # User Story
   # ----------
